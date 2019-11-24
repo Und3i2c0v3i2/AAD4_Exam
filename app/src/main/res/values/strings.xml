@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">AAD4</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- Permissions -->
+    <string name="permission_preferences">PERMISSION_PREFERENCES</string>
+    <string name="permission_camera">PERMISSION_CAMERA</string>
+    <string name="permission_tag_photo">PERMISSION_TAG_PHOTO</string>
+
+
+    <string name="show_rationale_title">Permissions needed</string>
+    <string name="show_rationale_message">This application needs permissions to %1$s</string>
+    <string name="show_rationale_negative_btn">Cancel</string>
+    <string name="show_rationale_positive_btn">Proceed</string>
+
+
+    <!-- List preferences -->
+    <string name="list_pref_key">list_pref_key</string>
+    <string name="info_type_title">Receive Informations</string>
+    <string name="prefs_header">Info</string>
+
+    <string-array name="pref_info_entries">
+        <item>Allow Toast Messages</item>
+        <item>Allow Notifications</item>
+    </string-array>
+
+    <string-array name="pref_info_values">
+        <item>Toast Messages</item>
+        <item>Notifications</item>
+    </string-array>
+
+
+    <!-- spinner -->
+    <string-array name="spinner_types">
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+    </string-array>
+
+
+    <!-- Checkbox preferences -->
+
+    <!-- Settings Headers -->
+    <string name="toast_header">Toast Messages</string>
+
+    <!-- Toast Preferences -->
+    <string name="allow_toast_key">allow_toast</string>
+    <string name="allow_toast_title">Allow Toast</string>
+    <string name="allow_toast_summ_off">Don\'t show toast messages</string>
+    <string name="allow_toast_summ_on">Show toast messages</string>
+
+    <!-- Allow Toasts Preferences -->
+    <string name="add_toast_key">add_toast</string>
+    <string name="add_toast_title">Add note</string>
+    <string name="add_toast_summ_off">Don\'t display toasts when adding a note</string>
+    <string name="add_toast_summ_on">Display toasts when adding a note</string>
+
+    <string name="edit_toast_key">edit_toast</string>
+    <string name="edit_toast_title">Edit note</string>
+    <string name="edit_toast_summ_off">Don\'t display toasts when editing a note</string>
+    <string name="edit_toast_summ_on">Display toasts when editing a note</string>
+
+    <string name="delete_toast_key">delete_toast</string>
+    <string name="delete_toast_title">Delete note</string>
+    <string name="delete_toast_summ_off">Don\'t display toasts when deleting a note</string>
+    <string name="delete_toast_summ_on">Display toasts when deleting a note</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+</resources>
