@@ -46,14 +46,14 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='@{"Name: ".concat(var.name)}'
+                        android:text='@{"Name: ".concat(var.name ?? "")}'
                         android:textSize="18sp"
                         android:layout_marginBottom="8dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='@{"Description: ".concat(var.desc)}'
+                        android:text='@{"Description: ".concat(var.desc ?? "")}'
                         android:textSize="18sp"
                         android:layout_marginBottom="8dp"/>
 
@@ -61,7 +61,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='@{"Address: ".concat(var.address)}'
+                        android:text='@{"Address: ".concat(var.address ?? "")}'
                         android:textSize="18sp"
                         android:layout_marginBottom="8dp"/>
 
@@ -69,7 +69,7 @@
                         android:id="@+id/btn_phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='@{"Phone: ".concat(var.phoneString)}'
+                        android:text='@{"Phone: ".concat(var.phoneString ?? "")}'
                         android:onClick="@{(v) -> clickHandler.onClick(v)}"
                         android:textSize="18sp"
                         android:layout_marginBottom="8dp"/>
@@ -78,7 +78,7 @@
                         android:id="@+id/btn_web"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='@{"Web Address: ".concat(var.webAddress)}'
+                        android:text='@{"Web Address: ".concat(var.webAddress ?? "")}'
                         android:onClick="@{(v) -> clickHandler.onClick(v)}"
                         android:textSize="18sp"
                         android:layout_marginBottom="8dp"/>
@@ -86,7 +86,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='@{"Business Hours: ".concat(var.businessHours)}'
+                        android:text='@{"Business Hours: ".concat(var.businessHours ?? "")}'
                         android:textSize="18sp"
                         android:layout_marginBottom="8dp"/>
 
@@ -94,7 +94,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='@{"Price: ".concat(var.priceString)}'
+                        android:text='@{"Price: ".concat(var.priceString ?? "")}'
                         android:textSize="18sp"
                         android:layout_marginBottom="16dp"/>
 

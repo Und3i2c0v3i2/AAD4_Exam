@@ -93,11 +93,9 @@ public class EditFragment extends Fragment implements View.OnClickListener {
                 bundle.putInt(CONFIRM_KEY, ACTION_UPDATE);
                 bundle.putParcelable(OBJECT_PARCELABLE, binding.getVar());
                 listener.onActionPerformed(bundle);
-                getFragmentManager().popBackStack(DETAILS_FRAGMENT, 0);
                 break;
 
             case R.id.btn_cancel:
-                getFragmentManager().popBackStack(HOME_FRAGMENT, 0);
                 bundle.putInt(BUNDLE_KEY, OPEN_DETAILS);
                 bundle.putInt(OBJECT_ID, binding.getVar().getId());
                 listener.onActionPerformed(bundle);

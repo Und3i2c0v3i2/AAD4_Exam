@@ -10,8 +10,11 @@ import com.example.aad4.R;
 import com.example.aad4.entity.TouristAttraction;
 import com.example.aad4.view.OnActionPerformedListener;
 
+import static com.example.aad4.App.OBJECT_ID;
+import static com.example.aad4.view.OnActionPerformedListener.ACTION_UPDATE;
 import static com.example.aad4.view.OnActionPerformedListener.BUNDLE_KEY;
 import static com.example.aad4.view.OnActionPerformedListener.OBJECT_PARCELABLE;
+import static com.example.aad4.view.OnActionPerformedListener.OPEN_DETAILS;
 
 public class ConfirmationDialogUtil {
 
@@ -44,6 +47,12 @@ public class ConfirmationDialogUtil {
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
                                 isConfirmationShowing = false;
+                                if(action == ACTION_UPDATE) {
+                                    Bundle bundle = new Bundle();
+                                    bundle.putInt(BUNDLE_KEY, OPEN_DETAILS);
+                                    bundle.putInt(OBJECT_ID, touristAttraction.getId());
+                                    ((OnActionPerformedListener) context).onActionPerformed(bundle);
+                                }
                             }
                         });
 

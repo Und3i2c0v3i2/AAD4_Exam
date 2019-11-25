@@ -198,6 +198,7 @@ public class MainActivity
             case OPEN_DETAILS:
                 id = bundle.getInt(OBJECT_ID);
                 touristAttraction = dbRepository.getById(id);
+                getSupportFragmentManager().popBackStack(HOME_FRAGMENT, 0);
                 fragmentTransaction(DetailsFragment.newInstance(touristAttraction), DETAILS_FRAGMENT);
                 break;
 
@@ -218,6 +219,7 @@ public class MainActivity
                 break;
 
             case ACTION_UPDATE:
+                getSupportFragmentManager().popBackStack(DETAILS_FRAGMENT, 0);
                 touristAttraction = bundle.getParcelable(OBJECT_PARCELABLE);
                 if (dbRepository.modify(touristAttraction) != -1) {
                     checkPrefs(this,"Updated ", touristAttraction.getName());
@@ -234,7 +236,6 @@ public class MainActivity
             case ACTION_CONFIRM:
                 touristAttraction = bundle.getParcelable(OBJECT_PARCELABLE);
                 int action = bundle.getInt(CONFIRM_KEY, -1);
-                touristAttraction = bundle.getParcelable(OBJECT_PARCELABLE);
                 showConfirmationDialog(this, action, touristAttraction);
                 break;
 
